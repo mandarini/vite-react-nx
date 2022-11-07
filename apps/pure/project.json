@@ -5,7 +5,7 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nxext/vite:build",
+      "executor": "@nrwl/vite:dev-server",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
@@ -19,8 +19,7 @@
         "assets": ["apps/pure/src/favicon.ico", "apps/pure/src/assets"],
         "styles": ["apps/pure/src/styles.css"],
         "scripts": [],
-        "configFile": "@nxext/vite/plugins/vite",
-        "frameworkConfigFile": "@nxext/react/plugins/vite"
+        "configFile": "@nxext/vite/plugins/vite"
       },
       "configurations": {
         "development": {
@@ -46,7 +45,7 @@
       }
     },
     "serve": {
-      "executor": "@nxext/vite:dev",
+      "executor": "@nrwl/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
         "outputPath": "dist/apps/pure",
