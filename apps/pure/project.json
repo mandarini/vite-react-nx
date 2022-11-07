@@ -5,7 +5,7 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/webpack:webpack",
+      "executor": "@nxext/vite:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
@@ -19,7 +19,8 @@
         "assets": ["apps/pure/src/favicon.ico", "apps/pure/src/assets"],
         "styles": ["apps/pure/src/styles.css"],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "configFile": "@nxext/vite/plugins/vite",
+        "frameworkConfigFile": "@nxext/react/plugins/vite"
       },
       "configurations": {
         "development": {
@@ -45,11 +46,15 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/webpack:dev-server",
+      "executor": "@nxext/vite:dev",
       "defaultConfiguration": "development",
       "options": {
+        "outputPath": "dist/apps/pure",
+        "baseHref": "/",
         "buildTarget": "pure:build",
-        "hmr": true
+        "hmr": true,
+        "configFile": "@nxext/vite/plugins/vite",
+        "frameworkConfigFile": "@nxext/react/plugins/vite"
       },
       "configurations": {
         "development": {
