@@ -5,19 +5,14 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:dev-server",
+      "executor": "@nrwl/vite:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "compiler": "babel",
+        "uiFramework": "react",
         "outputPath": "dist/apps/pure",
-        "index": "apps/pure/src/index.html",
         "baseHref": "/",
-        "main": "apps/pure/src/main.tsx",
-        "polyfills": "apps/pure/src/polyfills.ts",
-        "tsConfig": "apps/pure/tsconfig.app.json",
-        "assets": ["apps/pure/src/favicon.ico", "apps/pure/src/assets"],
-        "styles": ["apps/pure/src/styles.css"],
+        "sourcemaps": true,
         "scripts": []
       },
       "configurations": {
@@ -47,10 +42,9 @@
       "executor": "@nrwl/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
+        "uiFramework": "react",
         "outputPath": "dist/apps/pure",
-        "baseHref": "/",
-        "buildTarget": "pure:build",
-        "hmr": true
+        "baseHref": "/"
       },
       "configurations": {
         "development": {
