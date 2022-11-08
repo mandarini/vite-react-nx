@@ -18,8 +18,7 @@
         "tsConfig": "apps/pure/tsconfig.app.json",
         "assets": ["apps/pure/src/favicon.ico", "apps/pure/src/assets"],
         "styles": ["apps/pure/src/styles.css"],
-        "scripts": [],
-        "configFile": "@nxext/vite/plugins/vite"
+        "scripts": []
       },
       "configurations": {
         "development": {
@@ -51,9 +50,7 @@
         "outputPath": "dist/apps/pure",
         "baseHref": "/",
         "buildTarget": "pure:build",
-        "hmr": true,
-        "configFile": "@nxext/vite/plugins/vite",
-        "frameworkConfigFile": "@nxext/react/plugins/vite"
+        "hmr": true
       },
       "configurations": {
         "development": {
