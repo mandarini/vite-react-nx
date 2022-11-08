@@ -37,6 +37,8 @@
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "@vitejs/plugin-react": "^2.2.0",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
     "@vitest/ui": "^0.9.3",
     "babel-jest": "28.1.1",
     "c8": "^7.12.0",
