@@ -11,9 +11,7 @@
       "options": {
         "uiFramework": "react",
         "outputPath": "dist/apps/pure",
-        "baseHref": "/",
-        "sourcemaps": true,
-        "scripts": []
+        "baseHref": "/"
       },
       "configurations": {
         "development": {
